@@ -16,8 +16,12 @@ export default function Home() {
 
   const [nama, setNama] = useState('Gusti Ngurah Adhi Astika');
   function handlerNama() {
-    setNama(input.current.value);
-    input.current.value = '';
+    if (input.current.value !== '') {
+      setNama(input.current.value);
+      input.current.value = '';
+    } else {
+      alert('Jangan Isi Namanya 😁🙏');
+    }
   }
 
   return (
