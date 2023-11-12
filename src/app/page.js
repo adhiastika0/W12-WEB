@@ -19,6 +19,7 @@ export default function Home() {
     if (input.current.value !== '') {
       setNama(input.current.value);
       input.current.value = '';
+      handlerTambah();
     } else {
       alert('Jangan Isi Namanya 😁🙏');
     }
@@ -52,13 +53,7 @@ export default function Home() {
             placeholder="Masukkan Nama"
           />
           {/* Tombol CTA */}
-          <div
-            className="cta-button"
-            onClick={() => {
-              handlerTambah();
-              handlerNama();
-            }}
-          >
+          <div className="cta-button" onClick={handlerNama}>
             <p>Ganti Nama! {bravo}x</p>
           </div>
         </div>
