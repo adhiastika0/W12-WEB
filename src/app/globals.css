@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,39 +7,40 @@
 }
 
 /* Pilih Font */
-h1, p{
-  color: #1E1E1E;
+h1,
+p {
+  color: #1e1e1e;
   font-family: Plus Jakarta Sans;
 }
 
 /* Nama*/
-h1{
+h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: normal;
 }
 
 /* NIM dan BIO*/
-p{
+p {
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
 }
 
 /* Profile Picture*/
-.profile-header-banner{
+.profile-header-banner {
   width: 120px;
   height: 120px;
-  
+
   position: relative;
 }
 
 /* Body website */
-.body{
-  background-color: #F4F4F4;
+.body {
+  background-color: #f4f4f4;
 
   /* Fill Container di Figma == 100% di JS*/
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
 
   /* Arah Flex */
@@ -52,7 +53,7 @@ p{
 }
 
 /* Container */
-.banner-container{
+.banner-container {
   display: flex;
   width: 500px;
   padding: 24px;
@@ -64,47 +65,50 @@ p{
   border-radius: 24px;
 }
 /* Header Container */
-.header-banner-wrapper{
+.header-banner-wrapper {
   display: flex;
   align-items: center;
   gap: 32px;
 }
 /* Content Container */
-.content-header-banner{
+.content-header-banner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
 }
 /*CTA*/
-.cta-banner-wrapper{
+.cta-banner-wrapper {
   width: 100%;
   display: flex;
   gap: 16px;
   flex-direction: column;
 }
 
-.cta-input{
+.cta-input {
   padding: 16px;
   border-radius: 12px;
-  background-color: #CCC;
-  border: none;
   margin-top: 10px;
+  border: 2px solid #8E8E8E;
 }
 
-.cta-button{
+.cta-input:focus {
+  outline: none !important;
+  border: 2px solid #001ffe;
+}
+
+.cta-button {
   display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   align-self: stretch;
-
   border-radius: 12px;
-  background: #001FFE;
-
+  background: #001ffe;
+  cursor: pointer;
 }
-.cta-button p{
+.cta-button p {
   font-weight: 700;
   color: white;
 }

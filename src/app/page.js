@@ -21,7 +21,7 @@ export default function Home() {
       input.current.value = '';
       handlerTambah();
     } else {
-      alert('Jangan Isi Namanya 😁🙏');
+      alert('Jangan Lupa Isi Namanya 😁🙏');
     }
   }
 
