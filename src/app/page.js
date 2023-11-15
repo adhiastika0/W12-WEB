@@ -15,6 +15,13 @@ export default function Home() {
   const input = useRef(null);
 
   const [nama, setNama] = useState('Gusti Ngurah Adhi Astika');
+
+  const handlerOnEnter = (event) => {
+    if (event.key === 'Enter') {
+      handlerNama(event);
+    }
+  };
+
   function handlerNama() {
     if (input.current.value !== '') {
       setNama(input.current.value);
@@ -51,6 +58,7 @@ export default function Home() {
             ref={input}
             type="text"
             placeholder="Masukkan Nama"
+            onKeyDown={handlerOnEnter}
           />
           {/* Tombol CTA */}
           <div className="cta-button" onClick={handlerNama}>
