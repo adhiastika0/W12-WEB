@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import styles from './page.module.css';
 import foto from '/public/assets/profil.png';
 import { useRef, useState } from 'react';
+import '@/styles/home.css';
 
 export default function Home() {
   const [bravo, setBravo] = useState(0);
